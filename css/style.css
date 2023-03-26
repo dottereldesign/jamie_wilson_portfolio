@@ -143,6 +143,12 @@ h1 {
   box-shadow: 5px 5px 0px var(--clr-neutral-300);
 }
 
+.btn:hover {
+  background-color: var(--clr-neutral-300);
+  color: var(--clr-neutral-100);
+  border: 2px solid var(--clr-neutral-100);
+}
+
 /* header */
 header {
   padding: 8px;
@@ -164,6 +170,10 @@ header {
 .header_logo a {
   text-decoration: none;
   color: var(--clr-neutral-300);
+}
+
+.header_logo a:hover {
+  color: rgb(109, 109, 109);
 }
 
 /* main */
@@ -235,6 +245,11 @@ main p {
   height: auto;
 }
 
+.project img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
 h3 {
   font-family: var(--ff-primary-200);
   font-size: var(--fs-500);
@@ -245,6 +260,7 @@ h3 {
 }
 
 h3 a {
+  -webkit-text-decoration: underline 2px var(--clr-neutral-300);
   text-decoration: underline 2px var(--clr-neutral-300);
   color: var(--clr-neutral-300);
 }
