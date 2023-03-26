@@ -107,8 +107,32 @@ h1 {
   line-height: 1;
 }
 
+/* header */
+header {
+  padding: 8px;
+  border-bottom: 2px solid black;
+}
+
+.header_wrapper {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.header_logo {
+  font-family: consolas;
+  font-size: var(--fs-600);
+  color: var(--clr-neutral-300);
+  font-weight: var(--fw-bold);
+}
+
+/* main */
 main {
   background-color: var(--clr-neutral-200);
+}
+
+.main_wrapper {
+  width: min(100%, 1200px);
+  margin: 0 auto;
 }
 
 main h2 {
