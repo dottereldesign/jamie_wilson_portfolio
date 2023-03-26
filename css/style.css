@@ -147,6 +147,7 @@ h1 {
   background-color: var(--clr-neutral-300);
   color: var(--clr-neutral-100);
   border: 2px solid var(--clr-neutral-100);
+  transition: 0.3s;
 }
 
 /* header */
@@ -174,6 +175,7 @@ header {
 
 .header_logo a:hover {
   color: rgb(109, 109, 109);
+  transition: 0.3s;
 }
 
 /* main */
@@ -246,7 +248,7 @@ main p {
 }
 
 .project img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: 0.3s;
 }
 
@@ -260,9 +262,13 @@ h3 {
 }
 
 h3 a {
+  color: var(--clr-neutral-300);
+  text-decoration: none;
+}
+
+h3 a:hover {
   -webkit-text-decoration: underline 2px var(--clr-neutral-300);
   text-decoration: underline 2px var(--clr-neutral-300);
-  color: var(--clr-neutral-300);
 }
 
 .project_card-content_language {
@@ -281,6 +287,10 @@ h3 a {
   color: var(--clr-neutral-300);
   font-weight: var(--fw-semi-bold);
   text-decoration: none;
+}
+
+.project_card-content_source p:hover {
+  text-decoration: underline 1px var(--clr-neutral-300);
 }
 
 .project_card-content_source i {
