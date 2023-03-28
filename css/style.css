@@ -181,17 +181,30 @@ header {
 /* main */
 main {
   background-color: var(--clr-neutral-200);
-  padding: 98px 16px;
+  padding: 32px 16px;
   border-bottom: 2px solid black;
 }
 
 .main_wrapper {
+  display: flex;
+  flex-direction: column;
   width: min(100%, 1200px);
   margin: 0 auto;
 }
 
 .main_content {
+  order: 2;
   width: min(100%, 515px);
+}
+
+.main_hero-circle {
+  width: 458px;
+  height: 458px;
+  background: linear-gradient(180deg, #5b338d 0%, #c33764 100%);
+  border: 1px solid #000000;
+  box-shadow: 10px 10px 0px #000000;
+  border-radius: 299.5px;
+  position: relative;
 }
 
 main h2 {
@@ -212,6 +225,32 @@ main p {
 .main_content_btn-container {
   display: flex;
   margin-top: 32px;
+}
+
+@media (min-width: 1200px) {
+  .main_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: min(100%, 1200px);
+    margin: 0 auto;
+  }
+
+  .main_hero-circle::before {
+    content: "";
+    position: absolute;
+    width: 438px;
+    height: 438px;
+    bottom: -5px;
+    border-radius: 100%;
+    background-image: url("../images/jamie_wilson.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 269px 438px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+  }
 }
 
 /* section - project */
