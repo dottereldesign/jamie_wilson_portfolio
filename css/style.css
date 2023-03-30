@@ -2,9 +2,13 @@
   --clr-primary-100: #5b338d;
   --clr-primary-200: #c33764;
 
+  --clr-gradient-100: #6d0681;
+  --clr-gradient-200: #043e9b;
+
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-200: hsl(34, 78%, 91%);
-  --clr-neutral-300: hsl(0, 0%, 0%);
+  --clr-neutral-200: #fafafa;
+  --clr-neutral-300: #1c1d1f;
+  --clr-neutral-400: #6a6f73;
 
   --ff-primary-100: "Playfair Display", serif;
   --ff-primary-200: "Open Sans", sans-serif;
@@ -117,10 +121,10 @@ h1 {
   text-decoration: none;
   width: 136px;
   height: 50px;
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-100);
   font-family: var(--ff-primary-200);
   font-size: var(--fs-400);
-  color: var(--clr-neutral-300);
+  color: var(--clr-neutral-100);
   font-weight: var(--fw-bold);
   border: 2px solid var(--clr-neutral-300);
   box-shadow: 5px 5px 0px var(--clr-neutral-300);
@@ -153,7 +157,13 @@ h1 {
 /* header */
 header {
   padding: 8px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  background-color: var(--clr-neutral-200);
+  color: var(--clr-neutral-100);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header_wrapper {
@@ -181,7 +191,7 @@ header {
 /* main */
 main {
   background-color: var(--clr-neutral-200);
-  padding: 32px 16px;
+  padding: 132px 16px 32px 16px;
   border-bottom: 2px solid black;
 }
 
@@ -200,9 +210,13 @@ main {
 .main_hero-circle {
   width: 458px;
   height: 458px;
-  background: linear-gradient(180deg, #5b338d 0%, #c33764 100%);
-  border: 1px solid #000000;
-  box-shadow: 10px 10px 0px #000000;
+  background: linear-gradient(
+    180deg,
+    var(--clr-gradient-100) 0%,
+    var(--clr-gradient-200) 100%
+  );
+  border: 2px solid #000000;
+
   border-radius: 299.5px;
   position: relative;
 }
@@ -220,6 +234,7 @@ main p {
   font-size: var(--fs-500);
   color: var(--clr-neutral-300);
   font-weight: var(--fw-medium);
+  line-height: 1.5;
 }
 
 .main_content_btn-container {
@@ -233,6 +248,10 @@ main p {
     grid-template-columns: repeat(2, 1fr);
     width: min(100%, 1200px);
     margin: 0 auto;
+  }
+
+  .main_hero {
+    order: 2;
   }
 
   .main_hero-circle::before {
@@ -317,7 +336,7 @@ h3 a:hover {
 .project_card-content_language {
   font-family: var(--ff-primary-200);
   font-size: var(--fs-400);
-  color: rgb(68, 68, 68);
+  color: var(--clr-neutral-400);
   font-weight: var(--fw-medium);
   margin-bottom: 16px;
 }
@@ -333,6 +352,7 @@ h3 a:hover {
 }
 
 .project_card-content_source p:hover {
+  -webkit-text-decoration: underline 1px var(--clr-neutral-300);
   text-decoration: underline 1px var(--clr-neutral-300);
 }
 
