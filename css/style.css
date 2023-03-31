@@ -184,7 +184,6 @@ header {
 }
 
 .header_cta {
-  display: inline-block;
   text-decoration: none;
   font-family: var(--ff-primary-200);
   font-size: var(--fs-500);
@@ -192,7 +191,11 @@ header {
   font-weight: var(--fw-bold);
   background-color: #fac213;
   border-radius: 25px;
-  padding: 4px 16px;
+  padding: 12px 26px 14px 26px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--clr-neutral-300);
 }
 
@@ -234,7 +237,23 @@ h1 {
   width: min(100%, 515px);
 }
 
+.main_hero-diploma {
+  display: none;
+}
+
+.main_content_btn-container {
+  display: flex;
+  margin-top: 32px;
+}
+
+.main_hero {
+  display: grid;
+  justify-content: center;
+}
+
 .main_hero-circle {
+  grid-column: 1/4;
+  grid-row: 1;
   width: 343px;
   height: 343px;
   background: linear-gradient(180deg, #5b338d 0%, #c33764 100%);
@@ -277,11 +296,6 @@ main p {
   line-height: 1.5;
 }
 
-.main_content_btn-container {
-  display: flex;
-  margin-top: 32px;
-}
-
 @media (min-width: 1200px) {
   h1 {
     font-family: var(--ff-primary-100);
@@ -308,13 +322,50 @@ main p {
 
   .main_hero {
     order: 2;
+    display: grid;
+    grid-template-columns: 128px 83px 263px 147px;
+    grid-template-rows: 156px 128px 174px;
+  }
+
+  .main_hero-diploma {
+    width: 212px;
+    height: 173px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    z-index: 200;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
     justify-content: center;
+  }
+
+  .main_hero-diploma-body {
+    font-family: var(--ff-primary-200);
+    font-size: var(--fs-400);
+    color: var(--clr-neutral-300);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+    margin-top: 8px;
+  }
+
+  .main_hero-diploma-heading {
+    font-family: var(--ff-primary-200);
+    font-size: var(--fs-500);
+    color: var(--clr-neutral-300);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    margin-top: 8px;
   }
 
   .main_hero-circle {
     width: 458px;
     height: 458px;
+    grid-row: 1/4;
+    grid-column: 2/5;
     background: linear-gradient(180deg, #5b338d 0%, #c33764 100%);
     border: 2px solid #000000;
 
