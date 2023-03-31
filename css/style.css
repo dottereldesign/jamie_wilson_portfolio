@@ -207,7 +207,7 @@ header {
 /* main */
 main {
   background-color: var(--clr-neutral-200);
-  padding: 96px 16px 0 16px;
+  padding: 96px 16px 64px 16px;
   border-bottom: 1px solid var(--clr-neutral-400);
 }
 
@@ -241,6 +241,7 @@ h1 {
   border: 2px solid #000000;
   border-radius: 299.5px;
   position: relative;
+  overflow: hidden;
 }
 
 .main_hero-circle::before {
@@ -250,7 +251,6 @@ h1 {
   height: 326px;
   bottom: 0px;
   border-radius: 30%;
-
   background-image: url("../images/jamie_wilson.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -283,9 +283,18 @@ main p {
 }
 
 @media (min-width: 1200px) {
+  h1 {
+    font-family: var(--ff-primary-100);
+    font-size: var(--fs-900);
+    color: var(--clr-neutral-300);
+    font-weight: var(--fw-extra-bold);
+    line-height: 1;
+    margin-top: 0;
+  }
+
   main {
     background-color: var(--clr-neutral-200);
-    padding: 132px 16px 32px 16px;
+    padding: 96px 16px 32px 16px;
     border-bottom: 1px solid var(--clr-neutral-400);
   }
 
@@ -299,6 +308,8 @@ main p {
 
   .main_hero {
     order: 2;
+    display: flex;
+    justify-content: center;
   }
 
   .main_hero-circle {
@@ -331,7 +342,7 @@ main p {
 
 /* section - project */
 .project {
-  margin: 98px 0;
+  margin: 64px 0;
   padding: 0 16px;
 }
 
@@ -436,6 +447,11 @@ h3 a:hover {
     margin: 0 auto;
     gap: 16px;
   }
+
+  .project {
+    margin: 96px 0;
+    padding: 0 16px;
+  }
 }
 
 footer {
@@ -447,7 +463,7 @@ footer {
 .footer_wrapper {
   display: flex;
   justify-content: center;
-  padding: 64px 0 24px 0;
+  padding: 64px 0 64px 0;
   font-family: var(--ff-primary-200);
   font-size: var(--fs-400);
 }
