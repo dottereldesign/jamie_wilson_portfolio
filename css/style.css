@@ -2,8 +2,8 @@
   --clr-primary-100: #5b338d;
   --clr-primary-200: #c33764;
 
-  --clr-gradient-100: #6d0681;
-  --clr-gradient-200: #043e9b;
+  --clr-gradient-100: #5b338d;
+  --clr-gradient-200: #c33764;
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: #fafafa;
@@ -169,6 +169,9 @@ header {
 .header_wrapper {
   width: min(100%, 1200px);
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header_logo {
@@ -188,11 +191,32 @@ header {
   transition: 0.3s;
 }
 
+.header_cta {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--ff-primary-200);
+  font-size: var(--fs-500);
+  color: var(--clr-neutral-300);
+  font-weight: var(--fw-bold);
+  background-color: #fac213;
+  border-radius: 25px;
+  padding: 4px 16px;
+  border: 2px solid var(--clr-neutral-300);
+}
+
+.header_cta:hover {
+  background-color: var(--clr-neutral-300);
+  color: var(--clr-neutral-100);
+  border: 2px solid var(--clr-neutral-100);
+  transition: 0.3s;
+  border: 2px solid var(--clr-neutral-300);
+}
+
 /* main */
 main {
   background-color: var(--clr-neutral-200);
   padding: 132px 16px 32px 16px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid var(--clr-neutral-400);
 }
 
 .main_wrapper {
@@ -200,6 +224,7 @@ main {
   flex-direction: column;
   width: min(100%, 1200px);
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .main_content {
@@ -210,11 +235,7 @@ main {
 .main_hero-circle {
   width: 458px;
   height: 458px;
-  background: linear-gradient(
-    180deg,
-    var(--clr-gradient-100) 0%,
-    var(--clr-gradient-200) 100%
-  );
+  background: linear-gradient(180deg, #5b338d 0%, #c33764 100%);
   border: 2px solid #000000;
 
   border-radius: 299.5px;
@@ -243,11 +264,18 @@ main p {
 }
 
 @media (min-width: 1200px) {
+  main {
+    background-color: var(--clr-neutral-200);
+    padding: 96px 16px 32px 16px;
+    border-bottom: 1px solid var(--clr-neutral-400);
+  }
+
   .main_wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: min(100%, 1200px);
     margin: 0 auto;
+    padding: 48px 0;
   }
 
   .main_hero {
@@ -379,4 +407,18 @@ h3 a:hover {
     margin: 0 auto;
     gap: 16px;
   }
+}
+
+footer {
+  color: var(--clr-neutral-300);
+  background-color: var(--clr-neutral-200);
+  border-top: 1px solid rgb(160, 160, 160);
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 64px 0 24px 0;
+  font-family: var(--ff-primary-200);
+  font-size: var(--fs-400);
 }
