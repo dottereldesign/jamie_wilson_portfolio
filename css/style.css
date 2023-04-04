@@ -165,13 +165,6 @@ header {
   align-items: center;
 }
 
-.header_logo .brand-title {
-  font-family: consolas;
-  font-size: var(--fs-700);
-  color: var(--clr-neutral-300);
-  font-weight: var(--fw-bold);
-}
-
 .header_logo a {
   text-decoration: none;
   color: var(--clr-neutral-300);
@@ -691,17 +684,6 @@ body {
 }
 
 /* Background Styles Only */
-
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
-* {
-  font-family: Raleway;
-}
-
-html {
-  background-color: #dfdfdf;
-}
-
 .side-links {
   position: absolute;
   bottom: 15px;
@@ -740,4 +722,21 @@ html {
 .side-link-icon {
   color: white;
   font-size: 30px;
+}
+
+.brand-title {
+  font-family: consolas;
+  font-size: var(--fs-600);
+  color: var(--clr-neutral-200);
+  font-weight: var(--fw-medium);
+}
+
+.navbar-links a {
+  font-family: var(--ff-primary-200);
+  font-size: var(--fs-400);
+}
+
+.navbar-links li:last-child a {
+  color: gold;
+  font-weight: var(--fw-bold);
 }
