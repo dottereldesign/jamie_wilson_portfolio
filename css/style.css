@@ -422,6 +422,7 @@ main p .highlight-gold::before {
 .project {
   margin: 64px 0;
   padding: 0 16px;
+  scroll-margin-top: 4.5em;
 }
 
 .project_card-wrapper {
