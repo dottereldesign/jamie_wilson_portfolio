@@ -5,6 +5,9 @@
   --clr-gradient-100: #5b338d;
   --clr-gradient-200: #c33764;
 
+  --clr-accent-100: hsla(180, 89%, 64%, 0.4);
+  --clr-accent-200: hsl(51, 100%, 50%, 0.4);
+
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: #f6f9fc;
   --clr-neutral-300: hsl(0, 0%, 20%);
@@ -288,6 +291,27 @@ main p {
   line-height: 1.5;
 }
 
+main p span {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+  font-weight: var(--fw-bold);
+}
+
+main p span::before {
+  content: "";
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  background-color: var(--clr-accent-100);
+  z-index: -100;
+  bottom: 0;
+}
+
+main p .highlight-gold::before {
+  background-color: var(--clr-accent-200);
+}
+
 @media (min-width: 1200px) {
   h1 {
     font-family: var(--ff-primary-100);
@@ -384,6 +408,17 @@ main p {
 }
 
 /* section - project */
+.project h2 {
+  font-family: var(--ff-primary-200);
+  font-size: var(--fs-800);
+  color: var(--clr-primary-100);
+  font-weight: var(--fw-black);
+
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
 .project {
   margin: 64px 0;
   padding: 0 16px;
