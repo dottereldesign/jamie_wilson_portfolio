@@ -540,15 +540,42 @@ footer {
   animation: show 8s linear infinite;
 }
 
-@keyframes show {
+@-webkit-keyframes show {
   0% {
-    margin-top: -160px;
+    margin-top: -180px;
   }
   5% {
-    margin-top: -130px;
+    margin-top: -140px;
   }
   33% {
-    margin-top: -130px;
+    margin-top: -140px;
+  }
+  38% {
+    margin-top: -65px;
+  }
+  66% {
+    margin-top: -65px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -160px;
+  }
+}
+
+@keyframes show {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -140px;
+  }
+  33% {
+    margin-top: -140px;
   }
   38% {
     margin-top: -65px;
@@ -596,21 +623,21 @@ footer {
     animation: show 8s linear infinite;
   }
 
-  @keyframes show {
+  @-webkit-keyframes show {
     0% {
-      margin-top: -160px;
+      margin-top: -180px;
     }
     5% {
-      margin-top: -130px;
+      margin-top: -150px;
     }
     33% {
-      margin-top: -130px;
+      margin-top: -150px;
     }
     38% {
-      margin-top: -65px;
+      margin-top: -75px;
     }
     66% {
-      margin-top: -65px;
+      margin-top: -75px;
     }
     71% {
       margin-top: 0px;
@@ -619,7 +646,89 @@ footer {
       margin-top: 0px;
     }
     100% {
-      margin-top: -160px;
+      margin-top: -180px;
+    }
+  }
+
+  @keyframes show {
+    0% {
+      margin-top: -180px;
+    }
+    5% {
+      margin-top: -150px;
+    }
+    33% {
+      margin-top: -150px;
+    }
+    38% {
+      margin-top: -75px;
+    }
+    66% {
+      margin-top: -75px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -180px;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  @-webkit-keyframes show {
+    0% {
+      margin-top: -230px;
+    }
+    5% {
+      margin-top: -165px;
+    }
+    33% {
+      margin-top: -165px;
+    }
+    38% {
+      margin-top: -75px;
+    }
+    66% {
+      margin-top: -75px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -180px;
+    }
+  }
+  @keyframes show {
+    0% {
+      margin-top: -230px;
+    }
+    5% {
+      margin-top: -165px;
+    }
+    33% {
+      margin-top: -165px;
+    }
+    38% {
+      margin-top: -75px;
+    }
+    66% {
+      margin-top: -75px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -180px;
     }
   }
 }
