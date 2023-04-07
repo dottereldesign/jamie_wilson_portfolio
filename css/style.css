@@ -5,8 +5,8 @@
   --clr-gradient-100: #5b338d;
   --clr-gradient-200: #c33764;
 
-  --clr-accent-100: hsla(180, 89%, 64%, 0.4);
-  --clr-accent-200: hsl(51, 100%, 50%, 0.4);
+  --clr-accent-100: hsla(180, 89%, 64%, 1);
+  --clr-accent-200: hsl(51, 100%, 50%, 1);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: #f6f9fc;
@@ -291,7 +291,43 @@ main p {
   line-height: 1.5;
 }
 
-main p span {
+.main_span-animation-1 {
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+  animation: 1.5s highlight 1.5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  font-weight: var(--fw-bold);
+}
+
+.main_span-animation-2 {
+  -webkit-animation: 2s highlight 2s 1 normal forwards;
+  animation: 2s highlight 2s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(
+    90deg,
+    var(--clr-accent-200) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  font-weight: var(--fw-bold);
+}
+
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* main p span {
   position: relative;
   display: inline-block;
   z-index: 100;
@@ -306,7 +342,7 @@ main p span::before {
   background-color: var(--clr-accent-100);
   z-index: -100;
   bottom: 0;
-}
+} */
 
 main p .highlight-gold::before {
   background-color: var(--clr-accent-200);
