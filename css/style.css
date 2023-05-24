@@ -462,10 +462,36 @@ main p .highlight-gold::before {
   }
 }
 
-/* section - my story */
-.story {
-  margin-top: 64px;
-  scroll-margin-top: 4.5em;
+/* portfolio - rock, paper, scissors */
+.showcase {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.showcase_heading {
+  font-family: var(--ff-primary-200);
+  font-size: var(--fs-600);
+  color: var(--clr-neutral-500);
+  font-weight: var(--fw-bold);
+}
+
+.showcase_container-img {
+  border: 1px solid black;
+  grid-column: 1;
+  aspect-ratio: 4/2;
+
+  padding-top: 10px;
+}
+
+.rps .showcase_container-img {
+  background-color: #1a1a1a;
+}
+
+.showcase_container-img img {
+  width: 584px;
 }
 
 /* section - project */
@@ -491,7 +517,7 @@ section h2 {
   grid-template-columns: 1fr;
   gap: 16px;
   width: min(100%, 388px);
-  margin: 0 auto;
+  margin: 32px auto 0 auto;
 }
 
 .project_card {
@@ -506,18 +532,18 @@ section h2 {
   border-top: 1px solid var(--clr-neutral-300);
 }
 
-.project picture {
+.project_card-wrapper picture {
   width: min(100%, 388px);
   height: 217px;
   overflow: hidden;
 }
 
-.project img {
+.project_card-wrapper img {
   width: min(100%, 388px);
   height: auto;
 }
 
-.project img:hover {
+.project_card-wrapperimg:hover {
   transform: scale(1.03);
   transition: 0.3s;
 }
@@ -574,7 +600,7 @@ h3 a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: min(100%, 792px);
-    margin: 0 auto;
+    margin: 32px auto 0 auto;
     gap: 16px;
   }
 }
@@ -584,7 +610,7 @@ h3 a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: min(100%, 1200px);
-    margin: 0 auto;
+    margin: 32px auto 0 auto;
     gap: 16px;
   }
 

@@ -1,342 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamie Wilson</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c627734373.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamie Wilson</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c627734373.js" crossorigin="anonymous"></script>
-  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-</head>
+  <body>
+    <header>
+      <nav class="navbar header_wrapper">
+        <div class="brand-title header_logo">
+          <a href="index.html">&lt;/jamie&gt;</a>
+        </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
 
-<body>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="#story_id">About</a></li> -->
+            <li><a href="#project_id">Projects</a></li>
+            <li>
+              <a href="mailto:howemanning@gmail.com" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <header>
-    <nav class="navbar header_wrapper">
-      <div class="brand-title header_logo"><a href="index.html">&lt;/jamie&gt;</a></div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      
-      <div class="navbar-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="#story_id">About</a></li> -->
-          <li><a href="#project_id">Projects</a></li>
-          <li><a href="mailto:howemanning@gmail.com" target="_blank">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <div class="main_wrapper">
-      <div class="main_content">
-
-
-        <div id=container>
-          <h1><span>Jamie Wilson</span></h1>
-          <div id=flip>
-            <div>
-              <h2>Dad</h2>
+    <main>
+      <div class="main_wrapper">
+        <div class="main_content">
+          <div id="container">
+            <h1><span>Jamie Wilson</span></h1>
+            <div id="flip">
+              <div>
+                <h2>Dad</h2>
+              </div>
+              <div>
+                <h2>Designer</h2>
+              </div>
+              <div>
+                <h2>Developer</h2>
+              </div>
             </div>
-            <div>
-              <h2>Designer</h2>
-            </div>
-            <div>
-              <h2>Developer</h2>
-            </div>
           </div>
-
+          <p class="fade-in-text_3">
+            Welcome to my portfolio! This is my digital garden of sorts, it's
+            where I <span class="main_span-animation-1">showcase my work</span>.
+          </p>
+          <br />
+          <p class="fade-in-text_4">
+            Below, you'll discover previous projects I've created while on my
+            journey to become a
+            <span class="main_span-animation-2">Frontend Developer</span>.
+          </p>
+          <div class="main_content_btn-container">
+            <a
+              href="https://github.com/dottereldesign"
+              class="custom-btn btn-5 btn-1"
+              ><span>My GitHub</span></a
+            >
+            <a
+              href="https://www.linkedin.com/in/jamie-wilson-b1b8351b0/"
+              class="custom-btn btn-5 btn-2"
+              ><span>View LinkedIn</span></a
+            >
+          </div>
         </div>
-        <p class="fade-in-text_3 ">Welcome to my portfolio! This is my digital garden of sorts, it's where I <span class="main_span-animation-1">showcase my work</span>.</p>
-        <br>
-        <p class="fade-in-text_4">Below, you'll discover previous projects I've created while on my journey to become a <span class="main_span-animation-2">Frontend Developer</span>.</p>
-        <div class="main_content_btn-container">
-          <a href="https://github.com/dottereldesign" class="custom-btn btn-5 btn-1"><span>My GitHub</span></a>
-          <a href="https://www.linkedin.com/in/jamie-wilson-b1b8351b0/" class="custom-btn btn-5 btn-2"><span>View LinkedIn</span></a>
+
+        <div class="main_hero">
+          <div class="main_hero-diploma">
+            <img src="images/diploma.svg" alt="" />
+            <p class="main_hero-diploma-heading">Diploma</p>
+            <p class="main_hero-diploma-body">Web Development and Design</p>
+          </div>
+          <div class="main_hero-circle"></div>
         </div>
       </div>
+    </main>
 
-      <div class="main_hero">
-        <div class="main_hero-diploma">
-          <img src="images/diploma.svg" alt="">
-          <p class="main_hero-diploma-heading">Diploma</p>
-          <p class="main_hero-diploma-body">Web Development
-            and Design</p>
-        </div>
-        <div class="main_hero-circle">
-        </div>
+    <section id="project_id" class="project">
+      <h2>Projects</h2>
+
+      <div class="showcase">
+        <article class="feature_showcase rps">
+          <h3 class="showcase_heading">Rock, Paper, Scissors</h3>
+          <div class="showcase_container">
+            <a href="https://dottereldesign.github.io/rock_paper_scissors/">
+              <div class="showcase_container-img">
+                <img src="images/rps_showcase" alt="" />
+              </div>
+            </a>
+          </div>
+        </article>
+
+        <article class="feature_showcase etch-a-sketch">
+          <h3 class="showcase_heading">Etch-a-Sketch</h3>
+          <div class="showcase_container">
+            <a href="">
+              <div class="showcase_container-img">
+                <img src="" alt="" />
+              </div>
+            </a>
+          </div>
+        </article>
+
+        <article class="feature_showcase calculator">
+          <h3 class="showcase_heading">Calculator</h3>
+          <div class="showcase_container">
+            <a href="">
+              <div class="showcase_container-img">
+                <img src="" alt="" />
+              </div>
+            </a>
+          </div>
+        </article>
+
+        <article class="feature_showcase etch-a-sketch">
+          <h3 class="showcase_heading">Tic Tac Toe</h3>
+          <div class="showcase_container">
+            <a href="">
+              <div class="showcase_container-img">
+                <img src="" alt="" />
+              </div>
+            </a>
+          </div>
+        </article>
       </div>
-    </div>
-  </main>
-  <!-- 
-  <section id="story_id" class="story">
-    <h2>My Story</h2>
-  </section> -->
 
-  <section id="project_id" class="project">
-    <h2>Projects</h2>
-    <div id="project_id" class="project_card-wrapper">
+      <div id="project_id" class="project_card-wrapper">
+        <article class="project_card">
+          <a
+            href="https://dottereldesign.github.io/maker_pre-launch_landing_page/"
+          >
+            <picture>
+              <img
+                src="images/maker_landing_page.webp"
+                alt="Maker Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/maker_pre-launch_landing_page/">
-          <picture>
-            <img src="images/maker_landing_page.webp" alt="Maker Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+          <div class="project_card-content">
+            <h3>
+              <a
+                href="https://dottereldesign.github.io/maker_pre-launch_landing_page/"
+                >Maker Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/maker_pre-launch_landing_page/">Maker Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
-
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/maker_pre-launch_landing_page">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a
+                href="https://github.com/dottereldesign/maker_pre-launch_landing_page"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/art_gallery_website/">
-          <picture>
-            <img src="images/art_gallery.webp" alt="Art Gallery Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a href="https://dottereldesign.github.io/art_gallery_website/">
+            <picture>
+              <img
+                src="images/art_gallery.webp"
+                alt="Art Gallery Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/art_gallery_website/">Art Gallery Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a href="https://dottereldesign.github.io/art_gallery_website/"
+                >Art Gallery Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/art_gallery_website">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a href="https://github.com/dottereldesign/art_gallery_website">
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/news_homepage/">
-          <picture>
-            <img src="images/news.webp" alt="News Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a href="https://dottereldesign.github.io/news_homepage/">
+            <picture>
+              <img
+                src="images/news.webp"
+                alt="News Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/news_homepage/">News Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a href="https://dottereldesign.github.io/news_homepage/"
+                >News Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/news_homepage">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a href="https://github.com/dottereldesign/news_homepage">
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/single-page_developer_portfolio/">
-          <picture>
-            <img src="images/developer.webp" alt="Developer Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a
+            href="https://dottereldesign.github.io/single-page_developer_portfolio/"
+          >
+            <picture>
+              <img
+                src="images/developer.webp"
+                alt="Developer Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/single-page_developer_portfolio/">Developer Portfolio Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a
+                href="https://dottereldesign.github.io/single-page_developer_portfolio/"
+                >Developer Portfolio Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/single-page_developer_portfolio">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a
+                href="https://github.com/dottereldesign/single-page_developer_portfolio"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/insure_landing_page/">
-          <picture>
-            <img src="images/insure.webp" alt="Insure Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a href="https://dottereldesign.github.io/insure_landing_page/">
+            <picture>
+              <img
+                src="images/insure.webp"
+                alt="Insure Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/insure_landing_page/">Insure Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a href="https://dottereldesign.github.io/insure_landing_page/"
+                >Insure Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/insure_landing_page">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a href="https://github.com/dottereldesign/insure_landing_page">
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/huddle_landing_page_with_alternating_feature_blocks/">
-          <picture>
-            <img src="images/huddle.webp" alt="Huddle Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a
+            href="https://dottereldesign.github.io/huddle_landing_page_with_alternating_feature_blocks/"
+          >
+            <picture>
+              <img
+                src="images/huddle.webp"
+                alt="Huddle Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/huddle_landing_page_with_alternating_feature_blocks/">Huddle Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a
+                href="https://dottereldesign.github.io/huddle_landing_page_with_alternating_feature_blocks/"
+                >Huddle Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="#">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/equalizer_landing_page/">
-          <picture>
-            <img src="images/equalizer.webp" alt="Equalizer Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a href="https://dottereldesign.github.io/equalizer_landing_page/">
+            <picture>
+              <img
+                src="images/equalizer.webp"
+                alt="Equalizer Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/equalizer_landing_page/">Equalizer Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a href="https://dottereldesign.github.io/equalizer_landing_page/"
+                >Equalizer Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/equalizer_landing_page">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a
+                href="https://github.com/dottereldesign/equalizer_landing_page"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/loopstudios_landing_page/">
-          <picture>
-            <img src="images/loopstudios.webp" alt="Loopstudios Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a href="https://dottereldesign.github.io/loopstudios_landing_page/">
+            <picture>
+              <img
+                src="images/loopstudios.webp"
+                alt="Loopstudios Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/loopstudios_landing_page/">Loopstudios Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a
+                href="https://dottereldesign.github.io/loopstudios_landing_page/"
+                >Loopstudios Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/loopstudios_landing_page">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a
+                href="https://github.com/dottereldesign/loopstudios_landing_page"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/sunnyside_agency_landing_page/">
-          <picture>
-            <img src="images/sunnyside.webp" alt="Sunnyside Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a
+            href="https://dottereldesign.github.io/sunnyside_agency_landing_page/"
+          >
+            <picture>
+              <img
+                src="images/sunnyside.webp"
+                alt="Sunnyside Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/sunnyside_agency_landing_page/">Sunnyside Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a
+                href="https://dottereldesign.github.io/sunnyside_agency_landing_page/"
+                >Sunnyside Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/sunnyside_agency_landing_page">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a
+                href="https://github.com/dottereldesign/sunnyside_agency_landing_page"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/suite_landing_page/">
-          <picture>
-            <img src="images/suite.webp" alt="Suite Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a href="https://dottereldesign.github.io/suite_landing_page/">
+            <picture>
+              <img
+                src="images/suite.webp"
+                alt="Suite Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/suite_landing_page/">Suite Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a href="https://dottereldesign.github.io/suite_landing_page/"
+                >Suite Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/suite_landing_page">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a href="https://github.com/dottereldesign/suite_landing_page">
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/fylo_landing_page_with_two_column_layout/">
-          <picture>
-            <img src="images/fylo.webp" alt="Fylo Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a
+            href="https://dottereldesign.github.io/fylo_landing_page_with_two_column_layout/"
+          >
+            <picture>
+              <img
+                src="images/fylo.webp"
+                alt="Fylo Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/fylo_landing_page_with_two_column_layout/">Fylo Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a
+                href="https://dottereldesign.github.io/fylo_landing_page_with_two_column_layout/"
+                >Fylo Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/fylo_landing_page_with_two_column_layout">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a
+                href="https://github.com/dottereldesign/fylo_landing_page_with_two_column_layout"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project_card">
-        <a href="https://dottereldesign.github.io/single-page_design_portfolio/">
-          <picture>
-            <img src="images/design.webp" alt="Design Landing Page thumbnail." fetchpriority="low">
-          </picture>
-        </a>
+        <article class="project_card">
+          <a
+            href="https://dottereldesign.github.io/single-page_design_portfolio/"
+          >
+            <picture>
+              <img
+                src="images/design.webp"
+                alt="Design Landing Page thumbnail."
+                fetchpriority="low"
+              />
+            </picture>
+          </a>
 
-        <div class="project_card-content">
-          <h3><a href="https://dottereldesign.github.io/single-page_design_portfolio/">Designer Portfolio Homepage</a></h3>
-          <div class="project_card-content_language">HTML | CSS</div>
+          <div class="project_card-content">
+            <h3>
+              <a
+                href="https://dottereldesign.github.io/single-page_design_portfolio/"
+                >Designer Portfolio Homepage</a
+              >
+            </h3>
+            <div class="project_card-content_language">HTML | CSS</div>
 
-          <div class="project_card-content_source">
-            <a href="https://github.com/dottereldesign/single-page_design_portfolio">
-              <i class="fa-brands fa-github"></i>
-              <p>Source Code</p>
-            </a>
+            <div class="project_card-content_source">
+              <a
+                href="https://github.com/dottereldesign/single-page_design_portfolio"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>Source Code</p>
+              </a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
+    </section>
 
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer_wrapper">
-      <!-- <p>Find me elsewhere on the web as well:</p> -->
-      <p class="line-1 anim-typewriter">Designed & Built by Jamie Wilson</p>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    <footer>
+      <div class="footer_wrapper">
+        <!-- <p>Find me elsewhere on the web as well:</p> -->
+        <p class="line-1 anim-typewriter">Designed & Built by Jamie Wilson</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
